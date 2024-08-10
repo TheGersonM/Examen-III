@@ -19,7 +19,7 @@ class AddAlbum extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            TextField(
+            TextFormField(
               controller: nombreController,
               decoration: const InputDecoration(
                 labelText: 'Nombre del album',

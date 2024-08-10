@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                 
                 title: Text(album['nombre_album']),
                 subtitle: Text(album['nombre_banda']),
-                trailing: Text(album['votos'].toString()),
+                trailing: Text(album['votos'].toString(), style: const TextStyle(fontSize: 20),),
 
               );
             },
