@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 
@@ -13,7 +12,9 @@ class HomePage extends StatelessWidget {
     
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Votaciones Album del Año'),
+        title: const Text('Votaciones Album del Año', style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.blue,
+
       ),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('GM_Albums').snapshots(),  
